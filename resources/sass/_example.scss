@@ -1,0 +1,24 @@
+.example {
+    padding-top: 0;
+    .links {
+        list-style-type: none;
+        .link {
+            display: inline;
+            a {
+                white-space: nowrap;
+                color: $lightGrey;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+
+    .view {
+        display: block;
+        position: relative;
+    }
+}

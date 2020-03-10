@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    li {
+        display: inline-block;
+        a {
+            color: $darkGrey;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        &:hover:not(.active) {
+            background-color: $lightGrey;
+            border-radius: 5px;
+        }
+        a:hover {
+            color: $white;
+        }
+    }
+    .active {
+        background-color: $teal;
+        border-radius: 5px;
+        a {
+            color: $white;
+        }
+    }
+}

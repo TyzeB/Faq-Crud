@@ -1,0 +1,38 @@
+html,
+body {
+    padding-top: 5px;
+    background-color: $white;
+    color: $lightGrey;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.position-ref {
+    .right {
+        float: right;
+        a {
+            white-space: nowrap;
+            color: $lightGrey;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+        }
+    }
+}
+
+.left-main {
+    float: left;
+    white-space: nowrap;
+    color: $lightGrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}

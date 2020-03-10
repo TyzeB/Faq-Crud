@@ -1,0 +1,68 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $lightGreen;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin: 20px;
+}
+
+input[type="submit"] {
+    background-color: $teal;
+    color: $blue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+form {
+    width: 40%;
+    height: 50%;
+    margin:auto;
+    left:0;
+    right:0;
+    .group-input {
+        label {
+            margin: 20px;
+        }
+    }
+}
+
+.form-container {
+    height: 100%;
+    h2,
+    .msg {
+        margin: 20px;
+    }
+}
+
+textarea {
+    height: 400px;
+}
+
+.login-form,
+.register-form {
+    height: 100%;
+    position: relative;
+    form {
+        width: 30%;
+        height: 50%;
+        margin:auto;
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+}

@@ -1,0 +1,107 @@
+.category-list {
+    margin: auto;
+    width: 100% !important;
+    .split {
+        display: flex;
+        .categories {
+            max-width: 28% !important;
+            list-style-type: none;
+            margin-right: 2%;
+            flex: 1;
+            .category {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 10px 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 0.1rem;
+                border-right: 1px solid $lightGrey;
+                a {
+                    text-decoration: none;
+                    color: $blue;
+                    &:link {
+                        color: $blue;
+                    }
+
+                    &:active {
+                        color: $lightGrey;
+                    }
+                }
+                .settings-container {
+                    display: flex;
+                    align-items: center;
+                    float: right;
+                    .category-edit {
+                        vertical-align: middle;
+                        padding: 0 1em;
+                        margin: 0;
+                        height: 1em;
+                        width: 1em;
+                        cursor: pointer;
+                        border: 0;
+                        background: none;
+                        box-shadow: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:link {
+                            color: $blue;
+                        }
+                        &:visited {
+                            color: $blue;
+                        }
+                    }
+
+                    .category-delete {
+                        padding: 0 1em;
+                        margin: 0;
+                        height: 1em;
+                        width: 1em;
+                        vertical-align: middle;
+                        color: $blue;
+                        cursor: pointer;
+                        border: 0;
+                        background: none;
+                        box-shadow: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .v-active {
+                color: $lightGrey;
+                border-top: 1px solid $lightGrey;
+                border-bottom: 1px solid $lightGrey;
+                border-left: 1px solid $lightGrey;
+                border-right: 1px solid white !important;
+            }
+            .l-active {
+                color: $lightGrey;
+            }
+        }
+        .faqs-per-category {
+            width: 70% !important;
+            flex: 1;
+            margin-left: 0;
+            margin-right: 2%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .category-list {
+        .split {
+            padding: 0 10px !important;
+            display: block !important;
+            .categories {
+                min-width: 100% !important;
+                padding: 0 !important;
+            }
+            .faqs-per-category {
+                min-width: 100% !important;
+                padding: 0 !important;
+            }
+        }
+    }
+}
